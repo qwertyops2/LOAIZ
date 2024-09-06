@@ -8,108 +8,107 @@
 #include <time.h>
 
 #define NAME 15
-#define MAX_S 50
+#define MAX_S 3
 
 //int main() {
-    //
-    //
-
-    //			1 ЗАДАНИЕ
-
-
-    //int mi = INT_MAX, ma = INT_MIN;
-    //int a[10] = { 0 };
-
-    //for (int i = 0; i < 10; i++) {
-    //	a[i] = i;
-    //	i;
-    //	printf("%d ", a[i]);
-    //}
-
-    //for (int i = 0; i < 10; i++) {
-    //	if (a[i] < mi) { mi = a[i]; };
-    //	if (a[i] > ma) { ma = a[i]; };
-    //}
-
-    //printf("\n%d", ma - mi);
-    //printf("\n%d", ma);
-    //printf("\n%d", mi);
-
-
-    //			2 ЗАДАНИЕ
-
-
-    //int mi2 = 0, ma2 = 100, m = 0;
-    //int b[10] = { 0 };
-
-    //srand(time(NULL));
-
-    //for (int i = 0; i < 10; i++) {
-    //	m = mi2 + rand() % (ma2 - mi2 + 1);
-    //	b[i] = m;
-    //	printf("%d ", b[i]);
-    //}	
-
-
-    //			3 ЗАДАНИЕ
-
-
-    //int* c;
-    //int n, z = 0;
-    //printf("Введите размер массива: ");
-    //scanf_s("%d", &n);
-
-    //c = (int*)malloc(n * sizeof(int));
-    //for (int i = 0; i < n; i++) {
-    //	printf("Введите %d эл массива: ", i+1);
-    //	scanf_s("%d", &z);
-    //	c[i] = z;
-    //}
-
-    //printf("\n");
-
-    //for (int i = 0; i < n; i++) {
-    //	printf("%d ", c[i]);
-    //}
-
-
-    //			4 ЗАДАНИЕ
-
-
-    //int mi3 = 0, ma3 = 5;
-    //int sum_str = 0, sum_sto = 0;
-    //int n, m;
-    //printf("Введите размер массива (r c): ");
-    //scanf_s("%d %d", &n, &m);
-    //int** h = (int**)malloc(n * sizeof(int*));
-    //srand(time(NULL));
-
-    //for (int i = 0; i < n; i++) {
-    //	h[i] = (int*)malloc(m * sizeof(int));
-    //}
-
-    //for (int i = 0; i < n; i++) {
-    //	for (int j = 0; j < m; j++) {
-    //		h[i][j] = mi3 + rand() % (ma3 - mi3 + 1);
-    //		printf("%d\t", h[i][j]);
-    //	}
-    //	printf("\n");
-    //}
-
-    //for (int i = 0; i < 3; i++) {
-    //	sum_str = 0;
-    //	sum_sto = 0;
-    //	for (int j = 0; j < 3; j++) {
-    //		sum_str += h[i][j];
-    //		sum_sto += h[j][i];
-    //	}
-    //	printf("Сумма %d строки и столбца: %d / %d\n", i + 1, sum_str, sum_sto);
-    //}
-
-    //return 0;
+//    
+//    
+//
+//    	---------------1-----------------
+//
+//
+//    int mi = INT_MAX, ma = INT_MIN;
+//    int a[10] = { 0 };
+//
+//    for (int i = 0; i < 10; i++) {
+//    	a[i] = i;
+//    	printf("%d ", a[i]);
+//    }
+//
+//    for (int i = 0; i < 10; i++) {
+//    	if (a[i] < mi) { mi = a[i]; };
+//    	if (a[i] > ma) { ma = a[i]; };
+//    }
+//
+//    printf("\n%d", ma - mi);
+//    printf("\n%d", ma);
+//    printf("\n%d", mi);
+//
+//
+//    	---------------2-----------------
+//
+//
+//    int mi2 = 0, ma2 = 100, m = 0;
+//    int b[10] = { 0 };
+//
+//    srand(time(NULL));
+//
+//    for (int i = 0; i < 10; i++) {
+//    	m = mi2 + rand() % (ma2 - mi2 + 1);
+//    	b[i] = m;
+//    	printf("%d ", b[i]);
+//    }	
+//
+//
+//    	---------------3-----------------
+//
+//
+//    int* c;
+//    int n, z = 0;
+//    printf("Введите размер массива: ");
+//    scanf_s("%d", &n);
+//
+//    c = (int*)malloc(n * sizeof(int));
+//    for (int i = 0; i < n; i++) {
+//    	printf("Введите %d эл массива: ", i+1);
+//    	scanf_s("%d", &z);
+//    	c[i] = z;
+//    }
+//
+//    printf("\n");
+//
+//    for (int i = 0; i < n; i++) {
+//    	printf("%d ", c[i]);
+//    }
+//
+//
+//    	---------------4-----------------
+//
+//
+//    int mi3 = 0, ma3 = 5;
+//    int sum_str = 0, sum_sto = 0;
+//    int n, m;
+//    printf("Введите размер массива (r c): ");
+//    scanf_s("%d %d", &n, &m);
+//    int** h = (int**)malloc(n * sizeof(int*));
+//    srand(time(NULL));
+//
+//    for (int i = 0; i < n; i++) {
+//    	h[i] = (int*)malloc(m * sizeof(int));
+//    }
+//
+//    for (int i = 0; i < n; i++) {
+//    	for (int j = 0; j < m; j++) {
+//    		h[i][j] = mi3 + rand() % (ma3 - mi3 + 1);
+//    		printf("%d\t", h[i][j]);
+//    	}
+//    	printf("\n");
+//    }
+//
+//    for (int i = 0; i < 3; i++) {
+//    	sum_str = 0;
+//    	sum_sto = 0;
+//    	for (int j = 0; j < 3; j++) {
+//    		sum_str += h[i][j];
+//    		sum_sto += h[j][i];
+//    	}
+//    	printf("Сумма %d строки и столбца: %d / %d\n", i + 1, sum_str, sum_sto);
+//    }
+//
+//    return 0;
 //}
 
-//       ---------------5-----------------
+//       ---------------5----------------- со своим int main() { }
 
 struct student {
     char Name[NAME];
@@ -160,10 +159,8 @@ int main() {
 
     setlocale(LC_ALL, "Russian");
 
-    int c = 0;
+    int c = MAX_S;
 
-    printf("Количество студентов: ");
-    scanf("%d", &c);
     for (int i = 0; i < c; i++) {
         printf("Имя студента %d: ", i + 1);
         scanf("%s", students[i].Name);
@@ -175,7 +172,7 @@ int main() {
         scanf("%d", &students[i].Nomzach);
     }
 
-    int choice;
+    char choice;
     do {
         printf("\nВыберите метод поиска:\n");
         printf("1. Поиск по имени и фамилии\n");
@@ -183,10 +180,11 @@ int main() {
         printf("3. Поиск по номеру зачетки\n");
         printf("4. Выход\n");
         printf("Ваш выбор: ");
-        scanf("%d", &choice);
+        scanf("%s", &choice);
+
 
         switch (choice) {
-        case 1: {
+        case '1': {
             char search1[NAME];
             char search2[NAME];
             printf("Введите имя для поиска: ");
@@ -196,27 +194,28 @@ int main() {
             searchByName(students, c, search1, search2);
             break;
         }
-        case 2: {
+        case '2': {
             int searchAge;
             printf("Введите возраст для поиска: ");
             scanf("%d", &searchAge);
             searchByAge(students, c, searchAge);
             break;
         }
-        case 3: {
+        case '3': {
             int searchNomzach;
             printf("Введите номер зачетки для поиска: ");
             scanf("%d", &searchNomzach);
             searchByNomzach(students, c, searchNomzach);
             break;
         }
-        case 4:
+        case '4':
             printf("Выход из программы.\n");
             break;
         default:
             printf("Неверный выбор. Попробуйте снова.\n");
+            break;
         }
-    } while (choice != 4);
+    } while (choice != '4');
 
     return 0;
 }
