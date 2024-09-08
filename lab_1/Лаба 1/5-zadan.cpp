@@ -3,20 +3,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <locale.h>
+#include <windows.h>
 #include <limits.h>
 #include <time.h>
 
 #define NAME 15
 #define MAX_S 5
 
-//       ---------------5----------------- со своим int main() { }
+//       ---------------5-----------------
 
 struct student {
     char Name[NAME];
     char Name2[NAME];
     int Age, Nomzach;
-}students[MAX_S];
+}students[MAX_S] = {
+    {"Иван", "Пичаев", 18, 12345},
+    {"Сергей", "Чупраков", 19, 12346},
+    {"Валерий", "Кочегин", 18, 12347},
+    {"Илья", "Ваняшин", 19, 12348},
+    {"Никита", "Лунтев", 19, 12349}
+};
 
 void searchByName(struct student students[], int c, const char* Name, const char* Name2) {
     int found = 0;
@@ -59,19 +65,24 @@ void searchByNomzach(struct student students[], int c, int Nomzach) {
 
 int main() {
 
-    setlocale(LC_ALL, "Russian");
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
 
     int c = MAX_S;
 
+    //for (int i = 0; i < c; i++) {
+    //    printf("Имя студента %d: ", i + 1);
+    //    scanf("%s", students[i].Name);
+    //    printf("Фамилия студента %d: ", i + 1);
+    //    scanf("%s", students[i].Name2);
+    //    printf("Возраст студента %d: ", i + 1);
+    //    scanf("%d", &students[i].Age);
+    //    printf("Ночер зачетки студента %d: ", i + 1);
+    //    scanf("%d", &students[i].Nomzach);
+    //}
+
     for (int i = 0; i < c; i++) {
-        printf("Имя студента %d: ", i + 1);
-        scanf("%s", students[i].Name);
-        printf("Фамилия студента %d: ", i + 1);
-        scanf("%s", students[i].Name2);
-        printf("Возраст студента %d: ", i + 1);
-        scanf("%d", &students[i].Age);
-        printf("Ночер зачетки студента %d: ", i + 1);
-        scanf("%d", &students[i].Nomzach);
+        printf("Студент: %s %s. Возраст: %d. Номер зачетки: %d.\n", students[i].Name, students[i].Name2, students[i].Age, students[i].Nomzach);
     }
 
     char choice;
