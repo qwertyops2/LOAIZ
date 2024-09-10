@@ -1,3 +1,4 @@
-﻿  1-zadan.cpp
-E:\!Logika\lab_1\Лаба 1\1-zadan.cpp(176,9): warning C4101: ch_choice: неиспользованная локальная переменная
+﻿  Dop-zadan.cpp
+E:\!Logika\lab_1\Лаба 1\Dop-zadan.cpp(22,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+E:\!Logika\lab_1\Лаба 1\Dop-zadan.cpp(17,15): warning C4101: k: неиспользованная локальная переменная
   Лаба 1.vcxproj -> E:\!Logika\lab_1\x64\Debug\Лаба 1.exe

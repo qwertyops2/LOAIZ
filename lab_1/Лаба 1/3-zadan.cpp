@@ -10,6 +10,8 @@
 int main() {
 //    	---------------3-----------------
 
+    setlocale(LC_ALL, "Russian");
+
     int* c;
     int n, z = 0;
     printf("¬ведите размер массива: ");
