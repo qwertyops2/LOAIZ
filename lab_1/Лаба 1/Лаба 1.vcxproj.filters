@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="5-zadan.cpp">
+    <ClCompile Include="Dop-zadan.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
